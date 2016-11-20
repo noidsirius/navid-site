@@ -2,6 +2,7 @@ body {
   padding-top: 6rem;
   font-family: 'Open Sans', sans-serif, serif;
   background-color: #fafafa;
+  position: relative;
 }
 
 .info {
@@ -21,17 +22,34 @@ h1, h2, h3, h4, h5, h6 {
 
 .entry-type {
   color: #1abc9c;
-  padding-bottom: 20px;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .entry-type {
+    padding-bottom: 20px;
+  }
 }
 
 .entry + .entry {
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .entry + .entry {
+    margin-top: .5rem;
+  }
+}
+
 .time {
   position: relative;
-  padding-right: 3rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .time {
+    padding-right: 3rem;
+    padding-bottom: 0;
+  }
 }
 
 .title {
@@ -47,14 +65,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .time > .subtitle {
   font-weight: 300;
-  padding-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .time > .title,
   .time > .subtitle {
     font-weight: 300;
-    padding-bottom: 0;
     text-align: right;
   }
 }
@@ -104,11 +120,28 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.textify {
+@media screen and (min-width: 768px) {
+  .textify {
     white-space: pre-line;
+  }
 }
 
-ul.nav-pills {
-    top: 20px;
+.main-nav {
+  padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-nav {
     position: fixed;
+    top: 256px;
+    right: 15px;
+  }
+}
+
+a {
+  color: #2C3E50;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #2C3E50;
 }
