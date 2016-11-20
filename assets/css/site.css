@@ -130,6 +130,24 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 2rem;
 }
 
+
+.avatar-container {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  /*height: 200px;*/
+  /*margin: 0 auto;*/
+}
+.avatar{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+}
+
 @media screen and (min-width: 768px) {
   .main-nav {
     position: fixed;
@@ -137,7 +155,11 @@ h1, h2, h3, h4, h5, h6 {
     right: 15px;
   }
 }
-
+@media screen and (max-width: 767px) {
+  .avatar-container {
+    visibility: hidden;
+  }
+}
 a {
   color: #2C3E50;
 }
