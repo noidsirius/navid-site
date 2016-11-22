@@ -159,6 +159,13 @@ h1, h2, h3, h4, h5, h6 {
   .avatar-container {
     visibility: hidden;
   }
+  .nav-pills .nav-link {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    /*background-color: #111;*/
+  }
+
 }
 a {
   color: #2C3E50;
@@ -166,4 +173,18 @@ a {
 
 .nav-pills .nav-link.active {
   background-color: #2C3E50;
+}
+
+.nav-item{
+  text-align: center;
+}
+
+.nav-link:hover{
+  background: #aaa;
+  font-weight: bold;
+}
+
+.nav-pills .nav-link.active:hover{
+
+  background: #42586E;
 }
