@@ -188,3 +188,8 @@ a {
 
   background: #42586E;
 }
+
+details summary::-webkit-details-marker {
+  color: #1abc9c;
+  font-size: 20px;
+}
