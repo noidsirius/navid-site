@@ -149,11 +149,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .resume-container{
   text-align: center;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  /*background-color: #1abc9c;*/
+  /*border-color: #1abc9c;*/
 }
 .resume-container a{
-  color: #eee;
+  color: #1abc9c;
 }
 
 @media screen and (min-width: 768px) {
