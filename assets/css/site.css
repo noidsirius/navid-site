@@ -184,6 +184,10 @@ a {
 
 .nav-item{
   text-align: center;
+
+}
+.nav-item a {
+  font-size: 0.9em;
 }
 
 .nav-link:hover{
